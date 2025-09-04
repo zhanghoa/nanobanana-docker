@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  gemini-proxy:
+    build: .
+    ports:
+      - "8088:8088"
+    environment:
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
+    env_file:
+      - .env
+    restart: unless-stopped
