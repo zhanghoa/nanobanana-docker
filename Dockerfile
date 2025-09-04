@@ -1,5 +1,6 @@
 # Dockerfile
-FROM hayd/alpine-deno:1.45.2
+FROM denoland/deno:2.4.5
+
 
 WORKDIR /app
 
